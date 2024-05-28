@@ -1,0 +1,70 @@
+/* Стилізуємо контейнер */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Займає весь екран */
+    background-color: #fff; /* Колір фону */
+}
+
+/* Стилізуємо календар */
+.fc {
+    width: 800px; /* Змініть на ваш розмір */
+    margin: 0 auto; /* Центруємо календар на сторінці */
+}
+
+/* Стилізуємо заголовок */
+.fc-toolbar-title {
+    font-size: 15px; /* Розмір шрифту заголовку */
+    margin-bottom: 10px; /* Відступ вниз */
+}
+
+/* Стилізуємо дні та дати */
+.fc-daygrid-day {
+    text-align: center;
+    background-size: 10px;
+    box-sizing: border-box;
+    block-size: 10px;/* Вирівнюємо текст по центру */
+}
+
+.fc-daygrid-day-number {
+    font-size: 16px; /* Розмір шрифту номеру дня */
+}
+
+/* Стилізуємо події */
+.fc-event {
+    background-color: #ffa6c2; /* Колір фону події */
+    color: #000000; /* Колір тексту події */
+    border: none; /* Видаляємо рамку */
+    border-radius: 5px; /* Закруглюємо кути */
+    padding: 2px 5px; /* Внутрішній відступ */
+    margin-bottom: 5px; /* Відступ вниз */
+}
+
+/* Стилізуємо події при наведенні */
+.fc-event:hover {
+    background-color: #FF69B4; /* Змінюємо колір фону при наведенні */
+}
+
+.fc-today{
+    background-color: #ffa6c2; /* Колір фону події */
+    color: #000000; /* Колір тексту події */
+
+}
+
+.fc-button {
+    background-color: #FF69B4;
+    color: #fff;
+}
+
+/* Стилізуємо кнопку today */
+.fc-button-today {
+    background-color: #FF69B4;
+    color: #fff;
+}
+
+/* Стилізуємо комірку сьогоднішньої дати */
+.fc-daygrid-day.fc-today {
+    background-color: #FF69B4;
+    color: #fff;
+}
